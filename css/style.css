@@ -166,28 +166,34 @@ h1{
 }
 
 .card{
-    width: calc(95%/2);
+    width: calc(96%/4);
     padding: 20px;
-    background-color: white;
+    background: Black;
+    box-shadow:  0 0 5px 2px Black;                                               
     border-radius: 5px;
+    font-family: 'Mulish', sans-serif;
+
     box-sizing: border-box;
-    margin: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 5px;
     opacity: 0.5;
 }
 
 .card:hover{
     opacity: 1;
-
     transition: all 0.5s ease 0s ;
     
 }
 
 .card__title{
+    color: #fff0f5;
+    font-family: inherit;
     font-size: 18px;
     font-weight: bold;
 }
 
 .card__discription{
+    font-family: inherit;
+    color: #fff0f5;
     margin-top: 10px;
 }
 
@@ -197,12 +203,12 @@ h1{
     justify-content: center;
 }
 
-.imgCard{
-    position: center;
-    width: 100%/*
-    height: 500px;
-    width: 300px;
-*/}
+.img{
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
 
 .footer{
     display: flex;
@@ -353,24 +359,8 @@ h1{
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.col-md-2 {
-    -ms-flex: 0 0 16.666667%;
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-[type="reset"], [type="submit"], button, html [type="button"] {
-    -webkit-appearance: button;
-}
-
-button, select {
-    text-transform: none;
+.capcha-reg{
+    margin-top: 10px;
 }
 
 button, input {
@@ -404,7 +394,6 @@ label {
     background-color: inherit;
     border: 1px solid black;
     margin-left: 10px;
-    /*border-color: #007bff*/
 }
 
 /*--------------------------------forms-------------------------------*/
