@@ -3,7 +3,6 @@ var openModalWindow = document.getElementById('sign-in'),
     chooseToSignIn = document.getElementById('sign-in-form-btn'),
     chooseToSignUp = document.getElementById('sign-up-form-btn');
 
-
 // Отслеживаем клик
 openModalWindow.addEventListener('click', function() {
   popup.classList.add('open');
