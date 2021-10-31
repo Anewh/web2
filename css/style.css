@@ -37,6 +37,13 @@ body{
     background-image: url(img/grad.png);
 }
 
+/*---------------------------header----------------------------------*/
+
+h1{
+    font-size: 40px;
+    font-family: inherit;
+}
+
 .logo{ 
     width:64px;
     height:50px;
@@ -83,7 +90,7 @@ body{
     margin-right: 5rem;
 }
 
-.btn-my{
+.btn{
     display: inline-block;
     line-height: 1.5;
     text-align: center;
@@ -140,11 +147,6 @@ body{
     border-color: #422c16;
 }
 
-h1{
-    font-size: 40px;
-    font-family: inherit;
-}
-
 .page-text{
     font-size: 20px;
 }
@@ -162,11 +164,11 @@ h1{
 .card-block{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 10px;
+    margin-top: 10px;
 }
 
 .card{
-    width: calc(96%/4);
+    width: calc(98%/4);
     padding: 20px;
     background: Black;
     box-shadow:  0 0 5px 2px Black;                                               
@@ -174,7 +176,7 @@ h1{
     font-family: 'Mulish', sans-serif;
 
     box-sizing: border-box;
-    margin: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
     opacity: 0.5;
 }
 
@@ -195,19 +197,23 @@ h1{
     font-family: inherit;
     color: #fff0f5;
     margin-top: 10px;
+    display: block;
 }
 
-.card__img-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*.card__img-wrapper{
+    width: auto;
+    height: 70%;
+    flex: 1 1 auto;
+}*/
 
 .img{
     height: auto;
     width: auto;
-    max-height: 100%;
+    max-height: 70%;
     max-width: 100%;
+    color:  white;
+    margin-top: 10px;
+
 }
 
 .footer{
@@ -229,7 +235,6 @@ h1{
     top: 0;
     left: 0;
 
-
     opacity: 0;
     visibility: hidden;
     overflow: auto;
@@ -239,11 +244,6 @@ h1{
 .popup.open {
     opacity: 1;
     visibility: visible;
-}
-
-.open{
-    visibility: visible;
-    overflow: hidden;
 }
 
 .popup.open .popup__content{
@@ -260,31 +260,19 @@ h1{
     padding: 30px 10px 30px 10px;
 }
 
-.popap__area{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
 .popup__content{
     background-color: white;                                            
     font-family: Calibri;
     color:  black;
     max-width: 800px;
     padding: 30px;
-
-
     opacity: 0;
 }
 
 
 .popup-header{
     display: flex;
-    text-align: center;
     justify-content: space-between;
-
 }
 
 .popup__title{
@@ -299,12 +287,6 @@ h1{
     text-decoration: none;
     background-color: inherit;
     padding-bottom: 20px;
-}
-
-.open-modal-win{
-    font-size: 15px;
-    color:  white;
-    text-decoration: none;
 }
 
 .form-row {
@@ -329,12 +311,12 @@ h1{
     margin-left: -5px;
 }
 
-.form-row > .col, .form-row > [class*="col-"] {
+.form-row .col-x2 {
     padding-right: 5px;
     padding-left: 5px;
 }
 
-.col-md-6 {
+.col-x2 {
     flex: 0 0 50%;
     max-width: 50%;
 }
@@ -358,23 +340,13 @@ h1{
     margin-top: 10px;
 }
 
-button, input {
-    overflow: visible;
-}
-
-button, input, optgroup, select, textarea {
-    margin: 0;
-
-    font-family: Calibri;
-}
-
 label {
     display: inline-block;
     margin-bottom: .5rem;
     font-family: Calibri;
 }
 
-.button-change{
+.buttons-change{
     text-align: right;
 }
 
@@ -406,7 +378,6 @@ label {
 }
 
 .form-in{
-    
     margin: 20px 0 0 0;
     display: none;
     visibility: hidden;
@@ -414,17 +385,40 @@ label {
 }
 
 .form-in.open{
-
     display: block;
     visibility: visible;
     opacity: 1;
 }
 
 
-/*цвета: #D8BFD8
-#DDA0DD
-#FFDAB9
-#008080
-#2F4F4F
-#808080
-#C0C0C0*/
+@media (max-width: 855px){
+    .search{
+        width: 80%;
+    }
+
+    .header__nav__auth {
+        width:  5rem;
+        margin-right: 1rem;
+    }
+
+    .card-block{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        width: calc(96%/2);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 455px){
+     .card__discription{
+        display: none;
+    }
+
+    .card{
+        width: 95%;
+        opacity: 1;
+    }
+}

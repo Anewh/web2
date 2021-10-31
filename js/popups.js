@@ -54,7 +54,7 @@ function formRegValidation(){
               '\nRepeat password: '+ password_repeat +
               '\nEmail: '+email +
               '\nPhone number: '+ phone);
-        }
+        }else console.log("password must be equals");
     }    
     return false;
 }
