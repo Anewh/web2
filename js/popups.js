@@ -31,16 +31,6 @@ document.getElementById('sign-up-form-btn').addEventListener('click', function()
   formReg.classList.add('open');
 });
 
-
-function password_repeat_validation(password, password_repeat) {
-    if(password==password_repeat){
-        return true;
-    }
-    alert('Passwords must be equals');
-    return false;
-}
-
-
 function formRegValidation(){
     if(formReg.classList.contains('open')){
         var name = formReg.name.value;
